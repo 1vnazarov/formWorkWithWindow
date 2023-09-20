@@ -35,7 +35,10 @@
             this.btn_rightBottom = new System.Windows.Forms.Button();
             this.btn_rightTop = new System.Windows.Forms.Button();
             this.btn_leftTop = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.fullSize = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -52,6 +55,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btn_center
             // 
@@ -103,16 +107,38 @@
             this.btn_leftTop.UseVisualStyleBackColor = true;
             this.btn_leftTop.Click += new System.EventHandler(this.btn_leftTop_Click);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.fullSize);
+            this.groupBox2.Location = new System.Drawing.Point(367, 24);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(194, 189);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
+            // fullSize
+            // 
+            this.fullSize.Location = new System.Drawing.Point(44, 22);
+            this.fullSize.Name = "fullSize";
+            this.fullSize.Size = new System.Drawing.Size(95, 28);
+            this.fullSize.TabIndex = 0;
+            this.fullSize.Text = "Развернуть";
+            this.fullSize.UseVisualStyleBackColor = true;
+            this.fullSize.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -125,5 +151,7 @@
         private Button btn_center;
         private Button btn_leftBottom;
         private Button btn_rightBottom;
+        private GroupBox groupBox2;
+        private Button fullSize;
     }
 }

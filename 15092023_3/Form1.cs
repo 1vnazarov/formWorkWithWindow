@@ -31,5 +31,15 @@ namespace _15092023_3
         {
             Location = new Point(0, (Screen.PrimaryScreen.WorkingArea.Height - Height));
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            WindowState= FormWindowState.Maximized;
+        }
     }
 }
