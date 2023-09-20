@@ -39,7 +39,17 @@ namespace _15092023_3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            WindowState= FormWindowState.Maximized;
+            WindowState = FormWindowState.Maximized;
+        }
+
+        private void hideBtn_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void btn_restoreWindow_Click(object sender, EventArgs e)
+        {
+            WindowState= FormWindowState.Normal;
         }
     }
 }

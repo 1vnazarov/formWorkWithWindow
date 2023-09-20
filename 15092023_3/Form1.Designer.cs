@@ -36,6 +36,8 @@
             this.btn_rightTop = new System.Windows.Forms.Button();
             this.btn_leftTop = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.hideBtn = new System.Windows.Forms.Button();
+            this.btn_restoreWindow = new System.Windows.Forms.Button();
             this.fullSize = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -109,13 +111,35 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.hideBtn);
+            this.groupBox2.Controls.Add(this.btn_restoreWindow);
             this.groupBox2.Controls.Add(this.fullSize);
             this.groupBox2.Location = new System.Drawing.Point(367, 24);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(194, 189);
+            this.groupBox2.Size = new System.Drawing.Size(194, 125);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
+            // 
+            // hideBtn
+            // 
+            this.hideBtn.Location = new System.Drawing.Point(44, 90);
+            this.hideBtn.Name = "hideBtn";
+            this.hideBtn.Size = new System.Drawing.Size(95, 28);
+            this.hideBtn.TabIndex = 2;
+            this.hideBtn.Text = "Свернуть";
+            this.hideBtn.UseVisualStyleBackColor = true;
+            this.hideBtn.Click += new System.EventHandler(this.hideBtn_Click);
+            // 
+            // btn_restoreWindow
+            // 
+            this.btn_restoreWindow.Location = new System.Drawing.Point(44, 56);
+            this.btn_restoreWindow.Name = "btn_restoreWindow";
+            this.btn_restoreWindow.Size = new System.Drawing.Size(95, 28);
+            this.btn_restoreWindow.TabIndex = 1;
+            this.btn_restoreWindow.Text = "Восстановить";
+            this.btn_restoreWindow.UseVisualStyleBackColor = true;
+            this.btn_restoreWindow.Click += new System.EventHandler(this.btn_restoreWindow_Click);
             // 
             // fullSize
             // 
@@ -153,5 +177,7 @@
         private Button btn_rightBottom;
         private GroupBox groupBox2;
         private Button fullSize;
+        private Button hideBtn;
+        private Button btn_restoreWindow;
     }
 }
