@@ -39,8 +39,13 @@
             this.hideBtn = new System.Windows.Forms.Button();
             this.btn_restoreWindow = new System.Windows.Forms.Button();
             this.fullSize = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.size2 = new System.Windows.Forms.Button();
+            this.defaultSize = new System.Windows.Forms.Button();
+            this.size3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -56,7 +61,7 @@
             this.groupBox1.Size = new System.Drawing.Size(325, 203);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Расположение формы";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btn_center
@@ -111,15 +116,17 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.SteelBlue;
             this.groupBox2.Controls.Add(this.hideBtn);
             this.groupBox2.Controls.Add(this.btn_restoreWindow);
             this.groupBox2.Controls.Add(this.fullSize);
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(367, 24);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(194, 125);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Размер формы";
             // 
             // hideBtn
             // 
@@ -151,18 +158,64 @@
             this.fullSize.UseVisualStyleBackColor = true;
             this.fullSize.Click += new System.EventHandler(this.button1_Click);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.SteelBlue;
+            this.groupBox3.Controls.Add(this.size3);
+            this.groupBox3.Controls.Add(this.size2);
+            this.groupBox3.Controls.Add(this.defaultSize);
+            this.groupBox3.ForeColor = System.Drawing.Color.Black;
+            this.groupBox3.Location = new System.Drawing.Point(361, 155);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 123);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Размеры формы";
+            // 
+            // size2
+            // 
+            this.size2.Location = new System.Drawing.Point(49, 48);
+            this.size2.Name = "size2";
+            this.size2.Size = new System.Drawing.Size(95, 28);
+            this.size2.TabIndex = 2;
+            this.size2.Text = "839 x 464";
+            this.size2.UseVisualStyleBackColor = true;
+            this.size2.Click += new System.EventHandler(this.size2_Click);
+            // 
+            // defaultSize
+            // 
+            this.defaultSize.Location = new System.Drawing.Point(50, 17);
+            this.defaultSize.Name = "defaultSize";
+            this.defaultSize.Size = new System.Drawing.Size(95, 28);
+            this.defaultSize.TabIndex = 1;
+            this.defaultSize.Text = "Стандартный";
+            this.defaultSize.UseVisualStyleBackColor = true;
+            this.defaultSize.Click += new System.EventHandler(this.defaultSize_Click);
+            // 
+            // size3
+            // 
+            this.size3.Location = new System.Drawing.Point(49, 81);
+            this.size3.Name = "size3";
+            this.size3.Size = new System.Drawing.Size(95, 28);
+            this.size3.TabIndex = 3;
+            this.size3.Text = "939 x 564";
+            this.size3.UseVisualStyleBackColor = true;
+            this.size3.Click += new System.EventHandler(this.size3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -179,5 +232,9 @@
         private Button fullSize;
         private Button hideBtn;
         private Button btn_restoreWindow;
+        private GroupBox groupBox3;
+        private Button defaultSize;
+        private Button size2;
+        private Button size3;
     }
 }

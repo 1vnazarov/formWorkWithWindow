@@ -51,5 +51,20 @@ namespace _15092023_3
         {
             WindowState= FormWindowState.Normal;
         }
+
+        private void defaultSize_Click(object sender, EventArgs e)
+        {
+            Size = new Size(816, 489);
+        }
+
+        private void size2_Click(object sender, EventArgs e)
+        {
+            Size = new Size(839, 464);
+        }
+
+        private void size3_Click(object sender, EventArgs e)
+        {
+            Size = new Size(939, 564);
+        }
     }
 }
